@@ -1,5 +1,6 @@
 // app/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Discreet Northern California Companionship",
@@ -18,9 +19,9 @@ export default function HomePage() {
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-          <a href="/" className="font-semibold tracking-tight text-xl">
+          <Link href="/" className="font-semibold tracking-tight text-xl">
             Katherine Taylor
-          </a>
+          </Link>
           <nav className="hidden md:flex space-x-8 text-sm">
             <a href="#about" className="hover:text-zinc-600 transition-colors">About</a>
             <a href="#services" className="hover:text-zinc-600 transition-colors">Services</a>
@@ -40,16 +41,14 @@ export default function HomePage() {
         <section className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-tight">
-              Time-focused companionship,
-              <span className="block font-medium">deliberately discreet.</span>
+              Time-focused companionship, deliberately discreet.
             </h1>
             <p className="mt-8 max-w-3xl mx-auto text-xl text-zinc-600 leading-relaxed">
-              Thoughtful conversation. Calm presence. A refined, private experience
-              designed for those who value ease, discretion, and genuine connection.
+              Thoughtful conversation. Calm presence. A refined, private experience designed for those who value ease and trust.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#contact"
+                href="mailto:hello@katherinetaylorescort.com"
                 className="rounded-full px-8 py-4 text-sm font-medium bg-zinc-900 text-white hover:bg-zinc-800 transition-colors"
               >
                 Request an Introduction
@@ -178,7 +177,7 @@ export default function HomePage() {
             <div className="grid gap-8 md:grid-cols-2">
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-lg font-medium mb-3">What does "time-focused" mean?</h3>
+                  <h3 className="text-lg font-medium mb-3">What does &quot;time-focused&quot; mean?</h3>
                   <p className="text-zinc-700 leading-relaxed">
                     Our time together centers on conversation, presence, and shared experiences. 
                     The focus is on meaningful connection rather than transactional exchanges.
@@ -195,7 +194,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-medium mb-3">How do I get started?</h3>
                   <p className="text-zinc-700 leading-relaxed">
                     Simply reach out through the contact section below. Include your name, 
-                    preferred timing, and a brief note about what you're looking for.
+                    preferred timing, and a brief note about what you&apos;re looking for.
                   </p>
                 </div>
               </div>
@@ -268,7 +267,7 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-light tracking-tight">Request an Introduction</h2>
               <p className="mt-4 text-lg text-zinc-600 max-w-2xl mx-auto">
-                Ready to connect? I'd love to hear from you and discuss how we can create 
+                Ready to connect? I&apos;d love to hear from you and discuss how we can create 
                 a meaningful experience together.
               </p>
             </div>
@@ -277,7 +276,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-medium mb-4">Get in Touch</h3>
                 <p className="text-zinc-700 mb-6">
                   Please include your name, preferred timing, and a brief note about what 
-                  you're looking for. I'll respond within 24 hours to discuss next steps.
+                  you&apos;re looking for. I&apos;ll respond within 24 hours to discuss next steps.
                 </p>
                 <a
                   href="mailto:hello@katherinetaylorescort.com"
@@ -338,37 +337,21 @@ export default function HomePage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Katherine Taylor",
-              "description": "Professional companion offering discreet, time-focused companionship in Northern California",
-              "url": "https://katherinetaylorescort.com",
-              "email": "hello@katherinetaylorescort.com",
-              "address": {
-                "@type": "PostalAddress",
-                "addressRegion": "California",
-                "addressCountry": "US"
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "url": "https://katherinetaylorescort.com",
+                "name": "Katherine Taylor — Private Companion"
               },
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 37.7749,
-                  "longitude": -122.4194
-                },
-                "geoRadius": "100000"
-              },
-              "offers": {
-                "@type": "Service",
-                "name": "Companionship Services",
-                "description": "Professional companionship including social events, business functions, and personal time",
-                "provider": {
-                  "@type": "Person",
-                  "name": "Katherine Taylor"
-                }
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Katherine Taylor",
+                "url": "https://katherinetaylorescort.com",
+                "sameAs": []
               }
-            })
+            ])
           }}
         />
       </main>
