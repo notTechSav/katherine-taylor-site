@@ -1,67 +1,77 @@
 // app/layout.tsx
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://katherinetaylorescort.com"),
   title: {
-    default: "Katherine Taylor — Private Companion",
+    default: "San Francisco Escort - Katherine Taylor | Trusted & Discreet",
     template: "%s | Katherine Taylor",
   },
   description:
-    "Discreet, time-focused companionship in Northern California.",
+    "San Francisco escort and companion services by Katherine Taylor. Trusted, discreet, and professional engagements across the Bay Area and Northern California.",
   keywords: [
-    "companion",
+    "San Francisco escort",
+    "escorts",
     "escort",
-    "Northern California",
-    "discreet",
-    "private",
-    "companionship",
-    "social events",
-    "business functions",
-    "professional companion",
-    "San Francisco",
-    "Bay Area"
+    "SF escorts",
+    "SF escort",
+    "San Francisco escorts",
+    "Sacramento escort",
+    "Sacramento escorts",
+    "Katherine Taylor",
+    "Katherine Taylor escort",
+    "Bay Area escorts",
+    "Bay Area escort",
+    "Katherine Taylor Steph Curry",
+    "Katherine Taylor Warriors",
   ],
   authors: [{ name: "Katherine Taylor" }],
   creator: "Katherine Taylor",
   publisher: "Katherine Taylor",
-  alternates: { 
+  alternates: {
     canonical: "https://katherinetaylorescort.com",
+    languages: {
+      "en-US": "https://katherinetaylorescort.com",
+    },
   },
   openGraph: {
     type: "website",
     url: "https://katherinetaylorescort.com",
-    title: "Katherine Taylor — Private Companion",
+    title: "San Francisco Escort - Katherine Taylor | Trusted & Discreet",
     description:
-      "Discreet, time-focused companionship in Northern California.",
+      "San Francisco escort and companion services by Katherine Taylor. Trusted, discreet, and professional engagements across the Bay Area and Northern California.",
     siteName: "Katherine Taylor",
     locale: "en_US",
     images: [
       {
-        url: "/og.svg",
+        url: "https://katherinetaylorescort.com/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Katherine Taylor — Private Companion",
+        alt: "San Francisco Escort - Katherine Taylor | Trusted & Discreet",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Katherine Taylor — Private Companion",
+    title: "San Francisco Escort - Katherine Taylor | Trusted & Discreet",
     description:
-      "Discreet, time-focused companionship in Northern California.",
-    images: ["/og.jpg"],
+      "San Francisco escort and companion services by Katherine Taylor. Trusted, discreet, and professional engagements across the Bay Area and Northern California.",
+    images: ["https://katherinetaylorescort.com/og.jpg"],
   },
-  robots: { 
-    index: true, 
+  robots: {
+    index: true,
     follow: true,
+    maxSnippet: 200,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      maxSnippet: 200,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
     },
   },
   verification: {
@@ -70,11 +80,51 @@ export const metadata: Metadata = {
   category: "services",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="antialiased bg-white text-zinc-900">{children}</body>
+      <body className="antialiased bg-white text-zinc-900">
+        {children}
+
+        {/* JSON-LD structured data */}
+        <Script
+          id="ld-person-website"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Person",
+                  name: "Katherine Taylor",
+                  url: "https://katherinetaylorescort.com",
+                  jobTitle: "Escort",
+                  image: "https://katherinetaylorescort.com/og.jpg",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "San Francisco",
+                    addressRegion: "CA",
+                  },
+                },
+                {
+                  "@type": "WebSite",
+                  url: "https://katherinetaylorescort.com",
+                  name: "Katherine Taylor – San Francisco Escort",
+                  publisher: {
+                    "@type": "Person",
+                    name: "Katherine Taylor",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+      </body>
     </html>
   );
 }
-
