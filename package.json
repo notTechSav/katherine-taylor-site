@@ -10,7 +10,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@vercel/og": "^0.8.5",
+=======
+>>>>>>> 420f4c7903fcdf52c6e4e21a3c16b1892869d6f7
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1"
