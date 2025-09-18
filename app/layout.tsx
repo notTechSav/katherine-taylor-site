@@ -63,15 +63,15 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    maxSnippet: 200,
-    maxImagePreview: "large",
-    maxVideoPreview: -1,
+    "max-snippet": 200,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
     googleBot: {
       index: true,
       follow: true,
-      maxSnippet: 200,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
+      "max-snippet": 200,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
   },
   verification: {
