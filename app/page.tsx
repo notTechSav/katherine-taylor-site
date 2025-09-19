@@ -3,14 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Discreet Northern California Companionship",
-  description: "Elegant, low-key encounters designed around presence and ease. Private companion by advance arrangement.",
-  keywords: ["companion", "escort", "Northern California", "discreet", "private", "companionship"],
-  openGraph: {
-    title: "Katherine Taylor — Discreet Northern California Companionship",
-    description: "Elegant, low-key encounters designed around presence and ease. Private companion by advance arrangement.",
-    type: "website",
-  },
+  title: "San Francisco Escort – Katherine Taylor | Trusted & Discreet",
+  description:
+    "San Francisco escort and companion services by Katherine Taylor. Trusted, discreet, and professional engagements across the Bay Area and Northern California.",
 };
 
 export default function HomePage() {

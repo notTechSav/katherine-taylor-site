@@ -39,23 +39,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://katherinetaylorescort.com",
-    title: "San Francisco Escort - Katherine Taylor | Trusted & Discreet",
+    title: "San Francisco Escort – Katherine Taylor | Trusted & Discreet",
     description:
       "San Francisco escort and companion services by Katherine Taylor. Trusted, discreet, and professional engagements across the Bay Area and Northern California.",
     siteName: "Katherine Taylor",
-    locale: "en_US",
     images: [
       {
         url: "https://katherinetaylorescort.com/og.jpg",
         width: 1200,
         height: 630,
-        alt: "San Francisco Escort - Katherine Taylor | Trusted & Discreet",
+        alt: "San Francisco Escort – Katherine Taylor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "San Francisco Escort - Katherine Taylor | Trusted & Discreet",
+    title: "San Francisco Escort – Katherine Taylor | Trusted & Discreet",
     description:
       "San Francisco escort and companion services by Katherine Taylor. Trusted, discreet, and professional engagements across the Bay Area and Northern California.",
     images: ["https://katherinetaylorescort.com/og.jpg"],
@@ -101,26 +100,23 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "Person",
-                  name: "Katherine Taylor",
-                  url: "https://katherinetaylorescort.com",
-                  jobTitle: "Escort",
-                  image: "https://katherinetaylorescort.com/og.jpg",
-                  address: {
+                  "name": "Katherine Taylor",
+                  "url": "https://katherinetaylorescort.com",
+                  "jobTitle": "Escort",
+                  "image": "https://katherinetaylorescort.com/og.jpg",
+                  "address": {
                     "@type": "PostalAddress",
-                    addressLocality: "San Francisco",
-                    addressRegion: "CA",
-                  },
+                    "addressLocality": "San Francisco",
+                    "addressRegion": "CA"
+                  }
                 },
                 {
                   "@type": "WebSite",
-                  url: "https://katherinetaylorescort.com",
-                  name: "Katherine Taylor – San Francisco Escort",
-                  publisher: {
-                    "@type": "Person",
-                    name: "Katherine Taylor",
-                  },
-                },
-              ],
+                  "url": "https://katherinetaylorescort.com",
+                  "name": "Katherine Taylor – San Francisco Escort",
+                  "publisher": { "@type": "Person", "name": "Katherine Taylor" }
+                }
+              ]
             }),
           }}
         />
