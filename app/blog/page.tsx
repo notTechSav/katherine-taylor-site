@@ -16,7 +16,7 @@ export default function BlogIndex() {
         >
           <h2 className="text-xl font-semibold">The Ethical Escort</h2>
           <p className="mt-2 text-neutral-700">
-            Why credibility matters in this industry, and how "over a decade" of daily practice
+            Why credibility matters in this industry, and how &ldquo;over a decade&rdquo; of daily practice
             turns attentiveness into intuition—mastery you can feel without it ever being said.
           </p>
           <div className="mt-3 text-sm text-neutral-500">5–7 min read</div>

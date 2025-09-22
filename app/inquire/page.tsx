@@ -6,7 +6,7 @@ export default function InquirePage() {
       </h1>
 
       <p className="text-lg leading-relaxed text-neutral-700 text-center">
-        Here, each encounter reflects your finest qualities. For over a decade, I've refined
+        Here, each encounter reflects your finest qualities. For over a decade, I&apos;ve refined
         this craft through daily repetition and careful attention—discipline becoming intuition,
         mastery delivered with discretion.
       </p>
@@ -14,7 +14,7 @@ export default function InquirePage() {
       <p className="text-lg leading-relaxed text-neutral-700 text-center">
         If the cadence and care of this experience align with you, begin with a brief introduction:
         your first name, preferred city, and the kind of time you value most (lunch, dinner, an
-        afternoon). I'll respond with thoughtful next steps and current availability.
+        afternoon). I&apos;ll respond with thoughtful next steps and current availability.
       </p>
 
       <div className="flex justify-center">

@@ -13,7 +13,7 @@ export default function HomePage() {
         </p>
 
         <p className="text-lg sm:text-2xl leading-relaxed sm:leading-9 text-neutral-700">
-          For over a decade, I've refined this craft through daily repetition
+          For over a decade, I&apos;ve refined this craft through daily repetition
           and careful attention. That consistency has become intuition, and
           that longevity is proof: mastery is the promise I deliver.
         </p>
