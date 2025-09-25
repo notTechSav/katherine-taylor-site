@@ -8,12 +8,50 @@ export function WebsiteJsonLd() {
           "@type": "WebSite",
           name: "Katherine Taylor - San Francisco & Sacramento Escorts",
           url: "https://katherinetaylor.co",
-          description: "Elegant San Francisco & Sacramento escorts offering refined companionship across the Bay Area",
+          description: "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
           potentialAction: {
             "@type": "SearchAction",
             target: "https://katherinetaylor.co/inquire?q={search_term_string}",
             "query-input": "required name=search_term_string",
           },
+        }),
+      }}
+    />
+  );
+}
+
+export function WebPageJsonLd() {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
+          url: "https://katherinetaylor.co",
+          description: "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
+          mainEntity: {
+            "@type": "LocalBusiness",
+            name: "Katherine Taylor Escort Services",
+            url: "https://katherinetaylor.co"
+          },
+          breadcrumb: {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://katherinetaylor.co"
+              }
+            ]
+          },
+          isPartOf: {
+            "@type": "WebSite",
+            name: "Katherine Taylor - San Francisco & Sacramento Escorts",
+            url: "https://katherinetaylor.co"
+          }
         }),
       }}
     />
@@ -30,6 +68,7 @@ export function PersonJsonLd() {
           "@type": "Person",
           name: "Katherine Taylor",
           url: "https://katherinetaylor.co",
+          image: "https://katherinetaylor.co/homepage-about.jpg",
           description: "Katherine Taylor is a trusted name among San Francisco escorts and Sacramento escorts, offering elegant companionship across California.",
           jobTitle: "Professional Companion",
           worksFor: {

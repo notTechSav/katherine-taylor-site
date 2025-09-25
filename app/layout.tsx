@@ -1,7 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { WebsiteJsonLd, PersonJsonLd, OrganizationJsonLd, BreadcrumbJsonLd } from "./json-ld";
+import { WebsiteJsonLd, WebPageJsonLd, PersonJsonLd, OrganizationJsonLd, BreadcrumbJsonLd } from "./json-ld";
 import DevPanel from "./components/DevPanel";
 import { Analytics } from "@vercel/analytics/react";
 import { Playfair_Display, Inter } from "next/font/google";
@@ -29,11 +29,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://katherinetaylor.co"),
   title: {
-    default: "San Francisco & Sacramento Escorts | Katherine Taylor",
+    default: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
     template: "%s · Katherine Taylor",
   },
   description:
-    "Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area. Trusted among Bay Area escorts.",
+    "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
   alternates: {
     canonical: "/",
   },
@@ -45,17 +45,17 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://katherinetaylor.co",
     siteName: "Katherine Taylor",
-    title: "San Francisco & Sacramento Escorts | Katherine Taylor",
+    title: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
     description:
-      "Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area. Trusted among Bay Area escorts.",
+      "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
     locale: "en_US",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "San Francisco & Sacramento Escorts | Katherine Taylor",
+    title: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
     description:
-      "Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area.",
+      "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
     images: ["/opengraph-image"],
   },
 };
@@ -67,10 +67,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area. Trusted among Bay Area escorts." />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="description" content="Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence." />
         <link rel="canonical" href="https://katherinetaylor.co/" />
         <WebsiteJsonLd />
+        <WebPageJsonLd />
         <PersonJsonLd />
         <OrganizationJsonLd />
         <BreadcrumbJsonLd />
@@ -142,6 +143,10 @@ export default function RootLayout({
         <link rel="preload" href="/homepage-about.jpg" as="image" type="image/jpeg" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        {/* Performance optimizations */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta httpEquiv="x-dns-prefetch-control" content="on" />
         {/* Note: theme-color not supported in Firefox, but harmless */}
         <meta name="theme-color" content="#111111" />
         {/* Fallback for browsers that don't support theme-color */}
@@ -184,28 +189,28 @@ export default function RootLayout({
               <a 
                 href="/about" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="Learn about Katherine Taylor"
+                aria-label="Learn about Katherine Taylor - San Francisco escorts and Bay Area escorts"
               >
                 About
               </a>
               <a 
                 href="/gallery" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="View gallery of photos"
+                aria-label="View gallery of Bay Area escorts photos - Katherine Taylor's elegant portfolio"
               >
                 Gallery
               </a>
               <a 
                 href="/rates" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="View rates and pricing"
+                aria-label="View rates and pricing for Sacramento escorts and Bay Area escorts"
               >
                 Rates
               </a>
               <a 
                 href="/blog" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="Read journal entries"
+                aria-label="Read journal entries from San Francisco escorts - Katherine Taylor's insights"
               >
                 Journal
               </a>
@@ -219,7 +224,7 @@ export default function RootLayout({
               <a 
                 href="/faq" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="View frequently asked questions"
+                aria-label="View frequently asked questions about escorts near me and Bay Area escorts"
               >
                 FAQ
               </a>
