@@ -21,6 +21,33 @@ export default function BlogIndex() {
           </p>
           <div className="mt-3 text-sm text-neutral-500">5–7 min read</div>
         </a>
+        
+        <div className="block rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
+          <h2 className="text-xl font-semibold">Is Escorting Legal? A Guide to Legality in California</h2>
+          <p className="mt-2 text-neutral-700">
+            Understanding the legal landscape for San Francisco escorts and Sacramento escorts. 
+            Professional insights on discretion, safety, and compliance in the Bay Area.
+          </p>
+          <div className="mt-3 text-sm text-neutral-500">Coming Soon</div>
+        </div>
+        
+        <div className="block rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
+          <h2 className="text-xl font-semibold">How to Hire an Escort – Insider Guidance from Katherine Taylor Escort</h2>
+          <p className="mt-2 text-neutral-700">
+            Professional advice on booking escort services safely and discreetly. 
+            Learn the proper etiquette for hiring Bay Area escorts.
+          </p>
+          <div className="mt-3 text-sm text-neutral-500">Coming Soon</div>
+        </div>
+        
+        <div className="block rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
+          <h2 className="text-xl font-semibold">Can You Date an Escort? Reflections from Within the Profession</h2>
+          <p className="mt-2 text-neutral-700">
+            Personal insights on relationships, boundaries, and the unique dynamics 
+            of companionship in the escort industry.
+          </p>
+          <div className="mt-3 text-sm text-neutral-500">Coming Soon</div>
+        </div>
       </div>
     </main>
   );

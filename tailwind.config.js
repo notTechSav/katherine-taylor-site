@@ -10,8 +10,8 @@ module.exports = {
       fontFamily: {
         heading: ["var(--font-playfair)", "serif"],
         body: ["var(--font-inter)", "sans-serif"],
-        button: ["var(--font-josefin)", "sans-serif"],
-        geometric: ["var(--font-poppins)", "sans-serif"],
+        button: ["var(--font-inter)", "sans-serif"],
+        geometric: ["var(--font-inter)", "sans-serif"],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

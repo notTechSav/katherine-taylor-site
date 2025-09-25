@@ -2,6 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Critical CSS - inline for faster rendering */
+.font-heading {
+  font-family: var(--font-playfair), serif;
+  font-display: swap;
+}
+
+.font-body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-display: swap;
+}
+
+.font-button {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-display: swap;
+}
+
+/* Critical above-the-fold styles */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  font-family: var(--font-playfair), serif;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Prevent layout shift during font loading */
+.font-heading, .font-body, .font-button {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -122,11 +166,11 @@ body::-webkit-scrollbar {
   border-bottom: none !important;
 }
 
-
 /* Transparent navigation header */
 header.bg-transparent {
   background: transparent !important;
   background-color: transparent !important;
 }
+
 
 

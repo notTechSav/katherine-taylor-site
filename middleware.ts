@@ -2,6 +2,13 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
+  const url = request.nextUrl
+  
+  // Force HTTPS redirect in production
+  if (process.env.NODE_ENV === 'production' && request.headers.get('x-forwarded-proto') !== 'https') {
+    return NextResponse.redirect(`https://${url.host}${url.pathname}${url.search}`, 301)
+  }
+
   // Check if preview auth is enabled
   const previewAuth = process.env.NEXT_PUBLIC_PREVIEW_AUTH
   const previewUser = process.env.PREVIEW_USER
@@ -14,7 +21,6 @@ export function middleware(request: NextRequest) {
 
   // Check for existing auth
   const basicAuth = request.headers.get('authorization')
-  const url = request.nextUrl
 
   if (basicAuth) {
     const authValue = basicAuth.split(' ')[1]

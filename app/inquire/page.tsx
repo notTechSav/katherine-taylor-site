@@ -2,19 +2,15 @@ export default function InquirePage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16 space-y-8">
       <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-center">
-        Inquire About the Katherine Taylor Experience
+        Inquire – How to Book an Escort Online Safely
       </h1>
 
       <p className="text-lg leading-relaxed text-neutral-700 text-center">
-        Here, each encounter reflects your finest qualities. For over a decade, I&apos;ve refined
-        this craft through daily repetition and careful attention—discipline becoming intuition,
-        mastery delivered with discretion.
+        Begin with a brief introduction — your first name, the city, and the cadence of time you value most. I&apos;ll respond with thoughtful next steps.
       </p>
 
-      <p className="text-lg leading-relaxed text-neutral-700 text-center">
-        If the cadence and care of this experience align with you, begin with a brief introduction:
-        your first name, preferred city, and the kind of time you value most (lunch, dinner, an
-        afternoon). I&apos;ll respond with thoughtful next steps and current availability.
+      <p className="text-base leading-relaxed text-neutral-600 text-center">
+        <a href="/faq">How do I hire an escort discreetly?</a>
       </p>
 
       <div className="flex justify-center">
