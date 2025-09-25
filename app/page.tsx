@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <main id="main-content" className="h-screen overflow-y-scroll bg-gradient-to-br from-neutral-50 via-white to-neutral-100" role="main">
       {/* Primary H1 - SEO Optimized */}
-      <h1 className="sr-only">Katherine Taylor Escort – Elegant Companionship in San Francisco & Sacramento</h1>
+      <h1 className="sr-only">San Francisco & Sacramento Escorts – Katherine Taylor</h1>
       
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden" aria-label="Hero section with video background" role="region" aria-labelledby="hero-heading">
@@ -46,7 +46,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-about.jpg"
-            alt="Elegant San Francisco escort in refined portrait – Bay Area escort services"
+            alt="Katherine Taylor – San Francisco escorts in elegant eveningwear, Bay Area escort services"
             fill
             className="object-cover"
             priority
@@ -64,7 +64,7 @@ export default function HomePage() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
           <div className="text-center max-w-4xl">
             <h2 id="about-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight drop-shadow-lg mb-8">
-              About Katherine Taylor – The Escort Experience That Redefines Your Search for &apos;Escorts Near Me&apos;
+              About Katherine Taylor – Among San Francisco Escorts Known for Elegance
             </h2>
             <p className="font-body text-lg sm:text-xl lg:text-2xl text-white leading-relaxed drop-shadow-md mb-8">
               As one of the Bay Area escorts known for elegance and discretion, I offer more than proximity—I offer presence.
@@ -75,7 +75,7 @@ export default function HomePage() {
                 className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1"
                 aria-label="Read journal insights from San Francisco escorts"
               >
-                Read my insights as one of the San Francisco escorts in the Journal
+                Read my insights as one of the <strong>San Francisco escorts</strong> in the Journal
               </a>
             </p>
             <a
@@ -95,7 +95,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-gallery.webp"
-            alt="Gallery preview of Sacramento escort – elegant escort photo showcasing companionship"
+            alt="Bay Area escorts – weekend escape with Katherine Taylor, elegant escort photo showcasing companionship"
             fill
             className="object-cover"
             sizes="100vw"
@@ -112,7 +112,7 @@ export default function HomePage() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
           <div className="text-center max-w-4xl">
             <h2 id="gallery-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight drop-shadow-lg mb-8">
-              Gallery – Visual Reflections of One of San Francisco&apos;s Escorts
+              Gallery – Visual Reflections of a Bay Area Escort
             </h2>
             <h3 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-light text-white leading-relaxed drop-shadow-md mb-8">
               Escorts Near Me – A Glimpse into the Moments That Define Elegance
@@ -137,7 +137,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-rates.jpg"
-            alt="Escort rates and services in San Francisco – premium Bay Area escorts pricing"
+            alt="Sacramento escorts – premium Bay Area escorts pricing and rates for elegant companionship"
             fill
             className="object-cover"
             sizes="100vw"
@@ -154,7 +154,7 @@ export default function HomePage() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
           <div className="text-center max-w-4xl">
             <h2 id="rates-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight drop-shadow-lg mb-8">
-              Rates – Katherine Taylor Escort Experiences in San Francisco &amp; Sacramento
+              Rates – Sacramento Escorts Offering Tailored Experiences
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8" role="list" aria-label="Service offerings">
               <article className="text-center" role="listitem">
@@ -193,7 +193,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-faq.webp"
-            alt="FAQ and frequently asked questions about Sacramento escort services"
+            alt="Frequently asked questions about Sacramento escort services and Bay Area escorts"
             fill
             className="object-cover"
             sizes="100vw"
@@ -210,7 +210,7 @@ export default function HomePage() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
           <div className="text-center max-w-4xl">
             <h2 id="faq-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight drop-shadow-lg mb-8">
-              FAQ – Katherine Taylor <em>escorts</em> You, If You Will, Through Escort Etiquette, Travel, and Discretion in San Francisco, Sacramento, and the Bay Area
+              FAQ – Katherine Taylor Escorts You Through Etiquette & Travel
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8" role="list" aria-label="Frequently asked questions">
               <article className="text-left" role="listitem">
@@ -272,7 +272,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-journal.jpg"
-            alt="Journal reflections from one of the Bay Area escorts – professional insights and industry expertise"
+            alt="Journal reflections from one of the Bay Area escorts – professional insights from San Francisco escorts"
             fill
             className="object-cover"
             sizes="100vw"
@@ -309,7 +309,7 @@ export default function HomePage() {
                 className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1"
                 aria-label="Explore journal reflections from San Francisco escorts"
               >
-                Explore my reflections as one of the San Francisco escorts in the Journal
+                Explore my reflections as one of the <strong>San Francisco escorts</strong> in the Journal
               </a>
             </p>
             <a
@@ -329,7 +329,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-gifts.jpg"
-            alt="Thoughtful gifts for San Francisco escort arrangements – book escort services"
+            alt="Thoughtful gifts for San Francisco escort arrangements – book escort services with Bay Area escorts"
             fill
             className="object-cover"
             sizes="100vw"
@@ -380,7 +380,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-inquire.webp"
-            alt="Book escort services safely – Bay Area escorts inquiry and booking process"
+            alt="Book escort services safely – Bay Area escorts inquiry and booking process for Sacramento escorts"
             fill
             className="object-cover"
             sizes="100vw"
@@ -417,7 +417,7 @@ export default function HomePage() {
                 className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1"
                 aria-label="Discover professional insights from Bay Area escorts"
               >
-                Discover professional insights from one of the Bay Area escorts
+                Discover professional insights from one of the <strong>Bay Area escorts</strong>
               </a>
             </p>
             <a

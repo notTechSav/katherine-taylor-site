@@ -27,13 +27,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.katherinetaylorescort.com"),
+  metadataBase: new URL("https://katherinetaylor.co"),
   title: {
-    default: "San Francisco & Sacramento Escorts | Katherine Taylor – Elegant Companion",
+    default: "San Francisco & Sacramento Escorts | Katherine Taylor",
     template: "%s · Katherine Taylor",
   },
   description:
-    "Katherine Taylor Escort – The established choice among San Francisco escorts, Sacramento escorts, and those searching 'escorts near me'. Discover elegant companionship across California.",
+    "Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area. Trusted among Bay Area escorts.",
   alternates: {
     canonical: "/",
   },
@@ -43,19 +43,19 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://www.katherinetaylorescort.com",
+    url: "https://katherinetaylor.co",
     siteName: "Katherine Taylor",
-    title: "The Katherine Taylor Experience",
+    title: "San Francisco & Sacramento Escorts | Katherine Taylor",
     description:
-      "Tailored companionship for accomplished clients. Over a decade of refinement turned attentiveness into intuition.",
+      "Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area. Trusted among Bay Area escorts.",
     locale: "en_US",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Katherine Taylor Experience",
+    title: "San Francisco & Sacramento Escorts | Katherine Taylor",
     description:
-      "Tailored, discreet, tax-compliant companionship—mastery earned over a decade.",
+      "Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area.",
     images: ["/opengraph-image"],
   },
 };
@@ -68,8 +68,8 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Katherine Taylor Escort – The established choice among San Francisco escorts, Sacramento escorts, and those searching 'escorts near me'. Discover elegant companionship across California." />
-        <link rel="canonical" href="https://www.katherinetaylorescort.com/" />
+        <meta name="description" content="Elegant San Francisco & Sacramento escorts—Katherine Taylor offers refined companionship across the Bay Area. Trusted among Bay Area escorts." />
+        <link rel="canonical" href="https://katherinetaylor.co/" />
         <WebsiteJsonLd />
         <PersonJsonLd />
         <OrganizationJsonLd />
@@ -253,6 +253,20 @@ export default function RootLayout({
           <div className="mx-auto max-w-6xl px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-neutral-600">
             <div className="font-body">© {new Date().getFullYear()} Katherine Taylor</div>
             <nav className="flex items-center gap-4" role="navigation" aria-label="Footer navigation">
+              <a 
+                href="/sitemap.xml" 
+                className="font-body hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-opacity-50 rounded px-1"
+                aria-label="View sitemap"
+              >
+                Sitemap
+              </a>
+              <a 
+                href="/robots.txt" 
+                className="font-body hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-opacity-50 rounded px-1"
+                aria-label="View robots.txt"
+              >
+                Robots
+              </a>
               <a 
                 href="/inquire" 
                 data-cta="inquire" 

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const base = "https://katherinetaylorescort.com";
+  const base = "https://katherinetaylor.co";
   return {
     rules: {
       userAgent: "*",
@@ -10,6 +10,9 @@ export default function robots(): MetadataRoute.Robots {
         "/api/",
         "/_next/",
         "/opengraph-image", // image route, not a page
+        "/dev-links", // development links
+        "/admin", // admin areas
+        "/*.json$", // JSON files
       ],
     },
     sitemap: `${base}/sitemap.xml`,
