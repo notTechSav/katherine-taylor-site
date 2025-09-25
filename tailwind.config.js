@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ["var(--font-playfair)", "serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+        button: ["var(--font-josefin)", "sans-serif"],
+        geometric: ["var(--font-poppins)", "sans-serif"],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

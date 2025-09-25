@@ -1,73 +1,288 @@
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-white text-neutral-900 flex items-center justify-center p-8">
-      <main className="max-w-3xl w-full text-center space-y-8">
-        <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-tight">
-          Welcome to the Katherine Taylor Experience
-            </h1>
+    <div className="h-screen overflow-y-scroll bg-gradient-to-br from-neutral-50 via-white to-neutral-100">
+      {/* Hero Section */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Video Background */}
+        {/* Note: playsInline not supported in Firefox, but Firefox defaults to inline playback */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+          <div className="w-full h-full bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900"></div>
+        </video>
 
-        <p className="text-lg sm:text-2xl leading-relaxed sm:leading-9 text-neutral-700">
-          Here, every encounter is a reflection of your finest qualities,
-          brought to life through subtle detail. Imagine stepping into a world
-          where each moment feels naturally aligned and uniquely yours.
-        </p>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
-        <p className="text-lg sm:text-2xl leading-relaxed sm:leading-9 text-neutral-700">
-          For over a decade, I&apos;ve refined this craft through daily repetition
-          and careful attention. That consistency has become intuition, and
-          that longevity is proof: mastery is the promise I deliver.
-        </p>
+        {/* Text Content */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center">
+            <div className="space-y-1">
+              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-white leading-tight">
+                AN EXPERIENCE THAT REFLECTS YOUR HIGHEST QUALITIES
+              </h2>
+            </div>
+          </div>
+        </div>
 
-        <div className="flex justify-center mt-8">
+        {/* Discover Now Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
           <a
             href="/inquire"
             data-cta="inquire"
-            className="inline-flex items-center rounded-full bg-black text-white px-8 py-3 text-base font-medium hover:opacity-90 transition"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
+          >
+            Discover Now
+          </a>
+        </div>
+      </section>
+
+      {/* About Section - Full Viewport Image */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/homepage-about.jpg"
+            alt="Katherine Taylor"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Minimal Overlay */}
+        <div className="absolute inset-0 bg-black/10"></div>
+
+        {/* Text Content - Bottom Positioned */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <div className="space-y-1">
+              <p className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed">
+                FOR A DECADE, I&apos;VE HONED THE CRAFT OF ARRANGING DETAILS UNTIL THEY DISAPPEAR — LEAVING ONLY MOMENTS THAT FEEL TIMELESS. WHY THEY LINGER IS SOMETHING I EXPLAIN INSIDE…
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Journey Forward Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <a
+            href="/about"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
+          >
+            Journey Forward
+          </a>
+        </div>
+      </section>
+
+      {/* Gallery Section - Full Viewport Image */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/homepage-gallery.webp"
+            alt="Gallery Preview"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Text Content - Bottom Positioned */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <div className="space-y-1">
+              <p className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed">
+                IMAGES CAN ONLY SUGGEST WHAT IS BEST FELT IN PERSON. BEGIN WITH A GLIMPSE.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Enter the Gallery Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <a
+            href="/gallery"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
+          >
+            Enter the Gallery
+          </a>
+        </div>
+      </section>
+
+      {/* Rates Section - Full Viewport Image */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/homepage-rates.jpg"
+            alt="Rates Preview"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Mild Overlay */}
+        <div className="absolute inset-0 bg-black/20"></div>
+
+        {/* Text Content - Bottom Positioned */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <div className="space-y-1">
+              <p className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed">
+                DINNER, OVERNIGHT, A WEEKEND ESCAPE. ALWAYS UNHURRIED, ALWAYS PREPARED. THE DETAILS ARE WRITTEN WHERE THEY BELONG.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* View Rates Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <a
+            href="/rates"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
+          >
+            View Rates
+          </a>
+        </div>
+      </section>
+
+      {/* Journal Section - Full Viewport Image */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/homepage-journal.jpg"
+            alt="Journal Preview"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Text Content - Bottom Positioned */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <div className="space-y-1">
+              <p className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed">
+                SHORT ESSAYS AND REFLECTIONS — ON ELEGANCE, ON TIME, ON THE ART OF ARRANGEMENT. WRITTEN FOR THOSE WHO ENJOY MORE THAN A GLIMPSE.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Explore The Journal Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <a
+            href="/blog"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
+          >
+            Explore The Journal
+          </a>
+        </div>
+      </section>
+
+      {/* FAQ Section - Full Viewport Image */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/homepage-faq.webp"
+            alt="FAQ Preview"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Slight Overlay */}
+        <div className="absolute inset-0 bg-black/15"></div>
+
+        {/* Text Content - Bottom Positioned */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <div className="space-y-1">
+              <p className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed">
+                CLARITY WITHOUT CLUTTER. QUESTIONS ABOUT CADENCE, DISCRETION, OR TRAVEL? THE ANSWERS ARE COLLECTED HERE.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Read FAQ Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <a
+            href="/faq"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
+          >
+            Read FAQ
+          </a>
+        </div>
+      </section>
+
+      {/* Gifts Section - Full Viewport Image */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/homepage-gifts.jpg"
+            alt="Gifts Preview"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Text Content - Bottom Positioned */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <div className="space-y-1">
+              <p className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed">
+                NEVER REQUIRED. SOMETIMES UNFORGETTABLE.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* View Gifts Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <a
+            href="/gifts"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
+          >
+            View Gifts
+            </a>
+          </div>
+        </section>
+
+      {/* Inquire Section - Full Viewport Image */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/homepage-inquire.webp"
+            alt="Inquire Preview"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Text Content - Bottom Positioned */}
+        <div className="relative z-10 h-full flex items-end justify-center pb-20">
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <div className="space-y-1">
+              <p className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed">
+                BEGIN WITH A BRIEF INTRODUCTION — YOUR FIRST NAME, THE CITY, AND THE CADENCE OF TIME YOU VALUE MOST. I&apos;LL RESPOND WITH THOUGHTFUL NEXT STEPS.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Inquire Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <a
+            href="/inquire"
+            className="font-button inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 text-xs font-medium tracking-wider uppercase hover:bg-white/30 rounded-sm"
           >
             Inquire
           </a>
         </div>
+      </section>
 
-        <section className="pt-6">
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <a href="/inquire" data-cta="inquire" className="block rounded-2xl border border-neutral-200 p-6 hover:bg-neutral-50 transition">
-              <h2 className="text-lg font-semibold">Inquire</h2>
-              <p className="mt-1 text-sm text-neutral-700">
-                Begin with a brief introduction—city, cadence, and the kind of time you value most.
-              </p>
-            </a>
-
-            <a href="/blog" className="block rounded-2xl border border-neutral-200 p-6 hover:bg-neutral-50 transition">
-              <h2 className="text-lg font-semibold">The Ethical Escort — Journal</h2>
-              <p className="mt-1 text-sm text-neutral-700">
-                Notes on discretion, design, and the quiet craft of attentiveness.
-              </p>
-            </a>
-
-            <a href="/rates" className="block rounded-2xl border border-neutral-200 p-6 hover:bg-neutral-50 transition">
-              <h2 className="text-lg font-semibold">Rates</h2>
-              <p className="mt-1 text-sm text-neutral-700">
-                Cocktails & Conversation, Luncheon/Evening, Overnight, Weekend, and Arrangements —
-                with discreet notes on hosting, travel, and extensions.
-              </p>
-            </a>
-
-            <a href="/faq" className="block rounded-2xl border border-neutral-200 p-6 hover:bg-neutral-50 transition">
-              <h2 className="text-lg font-semibold">FAQ</h2>
-              <p className="mt-1 text-sm text-neutral-700">
-                Clear answers on boundaries, cadence, travel, and professional (tax-compliant) invoicing.
-              </p>
-            </a>
-
-            <a href="/about" className="block rounded-2xl border border-neutral-200 p-6 hover:bg-neutral-50 transition">
-              <h2 className="text-lg font-semibold">About</h2>
-              <p className="mt-1 text-sm text-neutral-700">
-                The philosophy behind the Experience—golden-ratio thinking, continuity, and mastery refined over a decade.
-              </p>
-            </a>
-          </div>
-        </section>
-      </main>
     </div>
     );
   }

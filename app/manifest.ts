@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Katherine Taylor",
-    short_name: "KT Experience",
+    short_name: "KTaylor",
     description:
       "The Katherine Taylor Experience — intuition, continuity, and mastery refined over a decade.",
     start_url: "/",

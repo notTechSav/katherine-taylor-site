@@ -25,3 +25,81 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Hide scrollbar and all scroll indicators */
+html {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox - Safari ignores this safely */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* WebKit (Safari/Chrome) */
+}
+
+/* Hide scroll indicators on all elements */
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox - Safari ignores this safely */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* WebKit (Safari/Chrome) */
+}
+
+/* Remove any default browser scroll indicators */
+body {
+  -webkit-overflow-scrolling: touch; /* iOS Safari smooth scrolling */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox - Safari ignores this safely */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* WebKit (Safari/Chrome) */
+}
+
+/* Cross-browser compatibility utilities */
+.backdrop-blur-sm {
+  -webkit-backdrop-filter: blur(4px); /* Safari 9+ */
+  backdrop-filter: blur(4px);
+}
+
+.backdrop-blur {
+  -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+  backdrop-filter: blur(8px);
+}
+
+/* Text size adjust compatibility */
+.text-size-adjust-none {
+  -webkit-text-size-adjust: none; /* Safari */
+  -moz-text-size-adjust: none; /* Firefox */
+  -ms-text-size-adjust: none; /* Internet Explorer 10+ */
+  text-size-adjust: none; /* Chrome 54+, Edge 79+ */
+}
+
+/* User select compatibility - proper ordering */
+.select-none {
+  -webkit-user-select: none; /* Safari 3+ */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer 10+ */
+  user-select: none;
+}
+
+/* Appearance compatibility - proper ordering */
+.appearance-none {
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
+  appearance: none;
+}
+
+/* Background clip compatibility - proper ordering */
+.bg-clip-text {
+  -webkit-background-clip: text; /* Safari */
+  background-clip: text;
+}
+
+/* Mask image compatibility */
+.mask-image {
+  -webkit-mask-image: var(--mask-image); /* Edge 79+ */
+  mask-image: var(--mask-image);
+}
+

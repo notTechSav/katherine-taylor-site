@@ -5,6 +5,32 @@ import "./globals.css";
 import { WebsiteJsonLd, PersonJsonLd, OrganizationJsonLd } from "./json-ld";
 import DevPanel from "./components/DevPanel";
 import { Analytics } from "@vercel/analytics/react";
+import { Playfair_Display, Inter, Josefin_Sans, Poppins } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const josefin = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  display: "swap",
+  weight: ["300", "400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://katherinetaylorescort.com"),
@@ -46,29 +72,70 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta charSet="utf-8" />
         <WebsiteJsonLd />
         <PersonJsonLd />
         <OrganizationJsonLd />
+        {/* Note: theme-color not supported in Firefox, but harmless */}
         <meta name="theme-color" content="#111111" />
+        {/* Fallback for browsers that don't support theme-color */}
+        <meta name="msapplication-navbutton-color" content="#111111" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body className="antialiased bg-white text-neutral-900">
+      <body className={`${playfair.variable} ${inter.variable} ${josefin.variable} ${poppins.variable} antialiased bg-white text-neutral-900`}>
         {/* Header */}
-        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b">
-          <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-            <a href="/" className="font-medium tracking-tight hover:opacity-80 transition">
-              Katherine Taylor
-            </a>
-            <nav className="flex items-center gap-4">
-              <a href="/blog" className="text-sm hover:opacity-80 transition">
-                Blog
+        <header>
+          {/* Top Banner */}
+          <div className="bg-neutral-900 text-white text-center py-2">
+            <p className="font-body text-xs tracking-wide">
+              Enjoy complimentary services, secure communications, and exclusive experiences. 
+              <a href="/inquire" className="underline hover:no-underline ml-1">Discover now</a>
+            </p>
+          </div>
+          
+          {/* Main Navigation */}
+          <div className="mx-auto max-w-7xl px-6">
+            {/* Logo */}
+            <div className="text-center py-6">
+              <a href="/" className="font-heading text-3xl font-light tracking-wider text-neutral-900 hover:opacity-80 transition">
+                KATHERINE TAYLOR
               </a>
-              <a
-                href="/inquire"
-                data-cta="inquire"
-                className="inline-flex items-center rounded-full border border-neutral-300 px-4 py-2 text-sm hover:bg-neutral-50 transition"
-              >
+            </div>
+            
+            {/* Navigation Menu */}
+            <nav className="flex items-center justify-center gap-8 pb-4">
+              <a href="/about" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+                About
+              </a>
+              <a href="/gallery" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+                Gallery
+              </a>
+              <a href="/rates" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+                Rates
+              </a>
+              <a href="/blog" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+                Journal
+              </a>
+              <a href="/gifts" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+                Gifts
+              </a>
+              <a href="/faq" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+                FAQ
+              </a>
+              <a href="/inquire" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
                 Inquire
               </a>
+              
+              {/* Search Icon */}
+              <button 
+                className="ml-4 p-2 hover:bg-neutral-100 rounded-full transition"
+                title="Search"
+                aria-label="Search"
+              >
+                <svg className="w-4 h-4 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
             </nav>
           </div>
         </header>
@@ -76,15 +143,15 @@ export default function RootLayout({
         {/* Page content */}
         {children}
 
-        <footer className="border-t mt-16">
-          <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
-            <div>© {new Date().getFullYear()} Katherine Taylor</div>
+        <footer className="mt-4">
+          <div className="mx-auto max-w-6xl px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-neutral-600">
+            <div className="font-body">© {new Date().getFullYear()} Katherine Taylor</div>
             <nav className="flex items-center gap-4">
-              <a href="/inquire" data-cta="inquire" className="hover:opacity-80">Inquire</a>
-              <a href="/blog" className="hover:opacity-80">Blog</a>
-              <a href="/rates" className="hover:opacity-80">Rates</a>
-              <a href="/faq" className="hover:opacity-80">FAQ</a>
-              <a href="/about" className="hover:opacity-80">About</a>
+              <a href="/inquire" data-cta="inquire" className="font-body hover:opacity-80">Inquire</a>
+              <a href="/blog" className="font-body hover:opacity-80">Blog</a>
+              <a href="/rates" className="font-body hover:opacity-80">Rates</a>
+              <a href="/faq" className="font-body hover:opacity-80">FAQ</a>
+              <a href="/about" className="font-body hover:opacity-80">About</a>
             </nav>
           </div>
         </footer>
