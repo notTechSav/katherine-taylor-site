@@ -27,13 +27,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://katherinetaylor.co"),
+  metadataBase: new URL("https://katherinetaylorescort.com"),
   title: {
-    default: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
+    default: "San Francisco & Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
     template: "%s · Katherine Taylor",
   },
   description:
-    "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
+    "Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'.",
   alternates: {
     canonical: "/",
   },
@@ -43,19 +43,19 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://katherinetaylor.co",
+    url: "https://katherinetaylorescort.com",
     siteName: "Katherine Taylor",
-    title: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
+    title: "San Francisco & Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
     description:
-      "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
+      "Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'.",
     locale: "en_US",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
+    title: "San Francisco & Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
     description:
-      "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
+      "Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'.",
     images: ["/opengraph-image"],
   },
 };
@@ -68,8 +68,8 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <meta name="description" content="Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence." />
-        <link rel="canonical" href="https://katherinetaylor.co/" />
+        <meta name="description" content="Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'." />
+        <link rel="canonical" href="https://katherinetaylorescort.com/" />
         <WebsiteJsonLd />
         <WebPageJsonLd />
         <PersonJsonLd />
@@ -86,34 +86,18 @@ export default function RootLayout({
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What sets Katherine Taylor apart from other escorts near me?",
+                  "name": "Where can I find San Francisco escorts?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Elegance, discretion, and a decade of experience. I offer more than proximity—I offer reliability, making me the trusted choice among Bay Area escorts."
+                    "text": "Katherine Taylor offers refined companionship in San Francisco and surrounding areas."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "How to hire an escort?",
+                  "name": "What makes Katherine Taylor unique among Sacramento escorts?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Begin with a brief introduction: your first name, the city, and the cadence of time you value most. I'll respond with thoughtful next steps. Discretion is always prioritized."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Are You Available as a Bay Area Escort?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. I offer discreet companionship throughout the Bay Area, including San Francisco and Sacramento. Travel arrangements beyond California are also available with thoughtful planning."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What if you're nowhere near me when I search 'escorts near me'?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Aside from Sacramento or San Francisco, I'm available for travel arrangements."
+                    "text": "Elegance, discretion, and poetic presence define the experience."
                   }
                 }
               ]
@@ -189,14 +173,14 @@ export default function RootLayout({
               <a 
                 href="/about" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="Learn about Katherine Taylor - San Francisco escorts and Bay Area escorts"
+                aria-label="About Katherine Taylor"
               >
                 About
               </a>
               <a 
                 href="/gallery" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="View gallery of Bay Area escorts photos - Katherine Taylor's elegant portfolio"
+                aria-label="Gallery of Bay Area escorts"
               >
                 Gallery
               </a>
@@ -224,7 +208,7 @@ export default function RootLayout({
               <a 
                 href="/faq" 
                 className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label="View frequently asked questions about escorts near me and Bay Area escorts"
+                aria-label="Frequently asked questions"
               >
                 FAQ
               </a>

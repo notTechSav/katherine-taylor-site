@@ -19,10 +19,10 @@ export default function HomePage() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center">
           <div className="text-center">
             <h2 id="hero-heading" className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-white leading-tight drop-shadow-lg mb-8">
-              Experience Refined Companionship with Katherine Taylor in San Francisco & Sacramento
+              Bay Area Elegance Among Refined Companions
             </h2>
             <h3 className="font-heading text-lg sm:text-xl lg:text-2xl font-light text-white leading-relaxed drop-shadow-md">
-              Escorts Near Me – The established choice among San Francisco escorts, Sacramento escorts, and those searching 'escorts near me'
+              Escorts Near Me – A Poetic Glimpse into Presence
             </h3>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-about.jpg"
-            alt="Katherine Taylor in San Francisco – poised elegance among Bay Area escorts offering refined companionship"
+            alt="Elegant Katherine Taylor in San Francisco"
             fill
             className="object-cover"
             loading="lazy"
@@ -73,13 +73,11 @@ export default function HomePage() {
               As one of the Bay Area escorts known for elegance and discretion, I offer more than proximity—I offer presence.
             </p>
             <p className="font-body text-base sm:text-lg text-white leading-relaxed drop-shadow-md mb-8">
-              <a 
-                href="/about" 
-                className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1"
-                aria-label="Learn about San Francisco escorts"
-              >
-                Discover more about <strong>San Francisco escorts</strong> and refined companionship
-              </a>
+              Explore refined companionship with 
+              <a href="/san-francisco-escorts" className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1">San Francisco escorts</a>, 
+              <a href="/sacramento-escorts" className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1">Sacramento escorts</a>, and 
+              <a href="/bay-area-escorts" className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1">Bay Area escorts</a>. 
+              For those searching <a href="/escorts-near-me" className="underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded px-1">escorts near me</a>, Katherine Taylor offers presence, not just proximity.
             </p>
             <a
               href="/about"
@@ -98,7 +96,7 @@ export default function HomePage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/homepage-gallery.webp"
-            alt="Bay Area escorts – Katherine Taylor in elegant evening attire, refined companionship in the heart of San Francisco"
+            alt="Bay Area escorts gallery image"
             fill
             className="object-cover"
             loading="lazy"

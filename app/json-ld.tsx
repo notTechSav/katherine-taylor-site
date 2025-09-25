@@ -6,14 +6,8 @@ export function WebsiteJsonLd() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Katherine Taylor - San Francisco & Sacramento Escorts",
-          url: "https://katherinetaylor.co",
-          description: "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
-          potentialAction: {
-            "@type": "SearchAction",
-            target: "https://katherinetaylor.co/inquire?q={search_term_string}",
-            "query-input": "required name=search_term_string",
-          },
+          name: "Katherine Taylor",
+          url: "https://katherinetaylorescort.com"
         }),
       }}
     />
@@ -28,30 +22,9 @@ export function WebPageJsonLd() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "San Francisco & Sacramento Escorts | Katherine Taylor – Refined Companionship",
-          url: "https://katherinetaylor.co",
-          description: "Among San Francisco escorts, Sacramento escorts, and Bay Area escorts, Katherine Taylor offers elegant, discreet companionship. Discover escorts near me with presence.",
-          mainEntity: {
-            "@type": "LocalBusiness",
-            name: "Katherine Taylor Escort Services",
-            url: "https://katherinetaylor.co"
-          },
-          breadcrumb: {
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://katherinetaylor.co"
-              }
-            ]
-          },
-          isPartOf: {
-            "@type": "WebSite",
-            name: "Katherine Taylor - San Francisco & Sacramento Escorts",
-            url: "https://katherinetaylor.co"
-          }
+          name: "Homepage",
+          url: "https://katherinetaylorescort.com",
+          description: "Discover refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts."
         }),
       }}
     />
@@ -67,58 +40,8 @@ export function PersonJsonLd() {
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Katherine Taylor",
-          url: "https://katherinetaylor.co",
-          image: "https://katherinetaylor.co/homepage-about.jpg",
-          description: "Katherine Taylor is a trusted name among San Francisco escorts and Sacramento escorts, offering elegant companionship across California.",
-          jobTitle: "Professional Companion",
-          worksFor: {
-            "@type": "Organization",
-            name: "Katherine Taylor Escort Services"
-          },
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "San Francisco",
-            addressRegion: "CA",
-            addressCountry: "US"
-          },
-          areaServed: [
-            {
-              "@type": "City",
-              name: "San Francisco"
-            },
-            {
-              "@type": "City", 
-              name: "Sacramento"
-            },
-            {
-              "@type": "Place",
-              name: "Bay Area"
-            }
-          ],
-          sameAs: [
-            "https://katherinetaylor.co/inquire",
-            "https://katherinetaylor.co/blog",
-            "https://katherinetaylor.co/gallery",
-            "https://katherinetaylor.co/rates"
-          ],
-          brand: {
-            "@type": "Brand",
-            name: "The Katherine Taylor Experience",
-          },
-          knowsAbout: [
-            "Professional companionship",
-            "Elegant escort services", 
-            "San Francisco escorts",
-            "Sacramento escorts",
-            "Bay Area escorts",
-            "Discretion and privacy",
-            "Travel companionship"
-          ],
-          hasOccupation: {
-            "@type": "Occupation",
-            name: "Professional Companion",
-            description: "Providing elegant companionship and escort services among San Francisco escorts and Sacramento escorts"
-          }
+          url: "https://katherinetaylorescort.com/about",
+          sameAs: []
         }),
       }}
     />
@@ -133,48 +56,16 @@ export function OrganizationJsonLd() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Katherine Taylor Escort Services",
-          url: "https://katherinetaylor.co",
-          description: "Elegant San Francisco & Sacramento escorts offering refined companionship across the Bay Area",
-          logo: "https://katherinetaylor.co/icon.svg",
-          image: "https://katherinetaylor.co/homepage-about.jpg",
-          sameAs: [
-            "https://katherinetaylor.co/inquire",
-            "https://katherinetaylor.co/blog"
-          ],
-          brand: {
-            "@type": "Brand",
-            name: "The Katherine Taylor Experience"
-          },
+          name: "Katherine Taylor",
+          url: "https://katherinetaylorescort.com",
           address: {
             "@type": "PostalAddress",
             addressLocality: "San Francisco",
             addressRegion: "CA",
             addressCountry: "US"
           },
-          areaServed: [
-            {
-              "@type": "City",
-              name: "San Francisco"
-            },
-            {
-              "@type": "City", 
-              name: "Sacramento"
-            },
-            {
-              "@type": "Place",
-              name: "Bay Area"
-            }
-          ],
-          serviceType: "Professional Escort Services",
-          contactPoint: [
-            {
-              "@type": "ContactPoint",
-              contactType: "customer service",
-              email: "inquiries@katherinetaylor.co",
-              availableLanguage: ["en"]
-            }
-          ]
+          image: "https://katherinetaylorescort.com/wp-content/uploads/2015/01/sitecover6.jpg",
+          description: "Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts."
         })
       }}
     />
