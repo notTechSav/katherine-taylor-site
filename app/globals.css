@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --ease-luxe: cubic-bezier(.22,1,.36,1);
+  --header-h: 4.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,4 +104,29 @@ body::-webkit-scrollbar {
   -webkit-mask-image: var(--mask-image); /* Edge 79+ */
   mask-image: var(--mask-image);
 }
+
+/* Katherine Taylor specific styles */
+.kt-sticky-blur {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-h);
+  background: rgba(255, 255, 255, 0.78);
+  -webkit-backdrop-filter: blur(10px); /* Safari 9+ */
+  backdrop-filter: blur(10px);
+  transition: background 0.35s var(--ease-luxe);
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+
+/* Transparent navigation header */
+header.bg-transparent {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
 

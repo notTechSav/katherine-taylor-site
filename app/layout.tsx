@@ -84,56 +84,47 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body className={`${playfair.variable} ${inter.variable} ${josefin.variable} ${poppins.variable} antialiased bg-white text-neutral-900`}>
-        {/* Header */}
-        <header>
-          {/* Top Banner */}
-          <div className="bg-neutral-900 text-white text-center py-2">
-            <p className="font-body text-xs tracking-wide">
-              Enjoy complimentary services, secure communications, and exclusive experiences. 
-              <a href="/inquire" className="underline hover:no-underline ml-1">Discover now</a>
-            </p>
-          </div>
-          
-          {/* Main Navigation */}
+        {/* Navigation Header */}
+        <header className="bg-transparent absolute top-0 left-0 right-0 z-10">
           <div className="mx-auto max-w-7xl px-6">
             {/* Logo */}
             <div className="text-center py-6">
-              <a href="/" className="font-heading text-3xl font-light tracking-wider text-neutral-900 hover:opacity-80 transition">
+              <a href="/" className="font-heading text-3xl font-light tracking-wider text-white hover:opacity-80 transition drop-shadow-lg">
                 KATHERINE TAYLOR
               </a>
             </div>
             
             {/* Navigation Menu */}
             <nav className="flex items-center justify-center gap-8 pb-4">
-              <a href="/about" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+              <a href="/about" className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md">
                 About
               </a>
-              <a href="/gallery" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+              <a href="/gallery" className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md">
                 Gallery
               </a>
-              <a href="/rates" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+              <a href="/rates" className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md">
                 Rates
               </a>
-              <a href="/blog" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+              <a href="/blog" className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md">
                 Journal
               </a>
-              <a href="/gifts" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+              <a href="/gifts" className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md">
                 Gifts
               </a>
-              <a href="/faq" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+              <a href="/faq" className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md">
                 FAQ
               </a>
-              <a href="/inquire" className="font-heading text-sm font-light tracking-wider uppercase text-neutral-700 hover:text-neutral-900 transition">
+              <a href="/inquire" className="font-heading text-sm font-light tracking-wider uppercase text-white hover:opacity-80 transition drop-shadow-md">
                 Inquire
               </a>
               
               {/* Search Icon */}
               <button 
-                className="ml-4 p-2 hover:bg-neutral-100 rounded-full transition"
+                className="ml-4 p-2 hover:bg-white/20 rounded-full transition"
                 title="Search"
                 aria-label="Search"
               >
-                <svg className="w-4 h-4 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
@@ -146,7 +137,7 @@ export default function RootLayout({
           {children}
         </ClientProviders>
 
-        <footer className="mt-4">
+        <footer className="mt-4 relative">
           <div className="mx-auto max-w-6xl px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-neutral-600">
             <div className="font-body">© {new Date().getFullYear()} Katherine Taylor</div>
             <nav className="flex items-center gap-4">
