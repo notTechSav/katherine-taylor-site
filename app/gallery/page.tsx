@@ -25,7 +25,7 @@ export default function GalleryPage() {
         <div className="aspect-square relative rounded-lg overflow-hidden">
           <Image
             src="/homepage-about.jpg"
-            alt="Elegant San Francisco escort portrait – refined escort photo in natural light"
+            alt="San Francisco escorts gallery – elegant portrait in natural light showcasing refined companionship"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -39,7 +39,7 @@ export default function GalleryPage() {
         <div className="aspect-square relative rounded-lg overflow-hidden">
           <Image
             src="/homepage-gallery.webp"
-            alt="Sacramento escort enjoying sophisticated evening – Bay Area escort services"
+            alt="Sacramento escorts gallery – sophisticated evening showcasing Bay Area escort services"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -53,7 +53,7 @@ export default function GalleryPage() {
         <div className="aspect-square relative rounded-lg overflow-hidden">
           <Image
             src="/homepage-rates.jpg"
-            alt="San Francisco cityscape backdrop for escort services – gallery preview"
+            alt="San Francisco escorts gallery – cityscape backdrop showcasing escort services"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -67,7 +67,7 @@ export default function GalleryPage() {
         <div className="aspect-square relative rounded-lg overflow-hidden">
           <Image
             src="/homepage-faq.webp"
-            alt="Luxurious setting for Bay Area escorts – escort rates and services showcase"
+            alt="Bay Area escorts gallery – luxurious setting showcasing escort rates and services"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -81,7 +81,7 @@ export default function GalleryPage() {
         <div className="aspect-square relative rounded-lg overflow-hidden">
           <Image
             src="/homepage-gifts.jpg"
-            alt="Discreet companion services in Sacramento – book escort services online"
+            alt="Sacramento escorts gallery – discreet companion services for booking escort services online"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -95,7 +95,7 @@ export default function GalleryPage() {
         <div className="aspect-square relative rounded-lg overflow-hidden">
           <Image
             src="/homepage-inquire.webp"
-            alt="Professional San Francisco escort – FAQ and frequently asked questions answered"
+            alt="San Francisco escorts gallery – professional companion with FAQ and frequently asked questions answered"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -113,7 +113,8 @@ export default function GalleryPage() {
         <a
           href="/inquire"
           data-cta="inquire"
-          className="inline-flex items-center rounded-full bg-black text-white px-8 py-3 text-base font-medium hover:opacity-90 transition"
+          className="inline-flex items-center rounded-full bg-black text-white px-8 py-3 text-base font-medium hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
+          aria-label="Inquire about Katherine Taylor's services"
         >
           Inquire
         </a>

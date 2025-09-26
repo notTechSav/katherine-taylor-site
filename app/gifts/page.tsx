@@ -17,7 +17,7 @@ export default function GiftsPage() {
           Never required. Sometimes unforgettable.
         </p>
         <p className="text-base leading-relaxed text-neutral-600">
-          <a href="/faq">What&apos;s the etiquette when gifting an escort?</a>
+          <a href="/faq" aria-label="Read frequently asked questions about gift etiquette for escorts">What&apos;s the etiquette when gifting an escort?</a>
         </p>
       </div>
 
@@ -46,7 +46,8 @@ export default function GiftsPage() {
         <a
           href="/inquire"
           data-cta="inquire"
-          className="inline-flex items-center rounded-full bg-black text-white px-8 py-3 text-base font-medium hover:opacity-90 transition"
+          className="inline-flex items-center rounded-full bg-black text-white px-8 py-3 text-base font-medium hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
+          aria-label="Inquire about Katherine Taylor's services and gift preferences"
         >
           Inquire
         </a>

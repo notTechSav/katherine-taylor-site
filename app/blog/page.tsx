@@ -12,7 +12,8 @@ export default function BlogIndex() {
       <div className="mt-8 grid gap-6">
         <a
           href="/blog/the-ethical-escort"
-          className="block rounded-2xl border border-neutral-200 p-6 hover:bg-neutral-50 transition"
+          className="block rounded-2xl border border-neutral-200 p-6 hover:bg-neutral-50 transition focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
+          aria-label="Read The Ethical Escort - journal entry about credibility in the escort industry"
         >
           <h2 className="text-xl font-semibold">The Ethical Escort</h2>
           <p className="mt-2 text-neutral-700">

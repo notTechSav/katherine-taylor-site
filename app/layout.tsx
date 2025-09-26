@@ -1,7 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { WebsiteJsonLd, WebPageJsonLd, PersonJsonLd, OrganizationJsonLd, BreadcrumbJsonLd } from "./json-ld";
+import { WebsiteJsonLd, WebPageJsonLd, PersonJsonLd, OrganizationJsonLd, BreadcrumbJsonLd, FAQPageJsonLd } from "./json-ld";
 import DevPanel from "./components/DevPanel";
 import { Analytics } from "@vercel/analytics/react";
 import { Playfair_Display, Inter } from "next/font/google";
@@ -27,13 +27,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://katherinetaylorescort.com"),
+  metadataBase: new URL("https://katherinetaylor.com"),
   title: {
-    default: "San Francisco & Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
+    default: "San Francisco Escorts | Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
     template: "%s · Katherine Taylor",
   },
   description:
-    "Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'.",
+    "Discover refined companionship with San Francisco escorts, Sacramento escorts, and Bay Area escorts. Katherine Taylor offers presence—not just proximity—for those seeking escorts near me.",
   alternates: {
     canonical: "/",
   },
@@ -43,19 +43,19 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://katherinetaylorescort.com",
+    url: "https://katherinetaylor.com",
     siteName: "Katherine Taylor",
-    title: "San Francisco & Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
+    title: "San Francisco Escorts | Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
     description:
-      "Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'.",
+      "Discover refined companionship with San Francisco escorts, Sacramento escorts, and Bay Area escorts. Katherine Taylor offers presence—not just proximity—for those seeking escorts near me.",
     locale: "en_US",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "San Francisco & Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
+    title: "San Francisco Escorts | Sacramento Escorts | Bay Area Elegance – Katherine Taylor",
     description:
-      "Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'.",
+      "Discover refined companionship with San Francisco escorts, Sacramento escorts, and Bay Area escorts. Katherine Taylor offers presence—not just proximity—for those seeking escorts near me.",
     images: ["/opengraph-image"],
   },
 };
@@ -66,44 +66,35 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Skip link for keyboard navigation */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .skip-link {
+              position: absolute;
+              top: -40px;
+              left: 6px;
+              background: #000;
+              color: #fff;
+              padding: 8px;
+              text-decoration: none;
+              z-index: 1000;
+              border-radius: 4px;
+            }
+            .skip-link:focus {
+              top: 6px;
+            }
+          `
+        }} />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <meta name="description" content="Refined companionship among San Francisco escorts, Sacramento escorts, and Bay Area escorts. Discover Katherine Taylor—your poetic answer to 'escorts near me'." />
-        <link rel="canonical" href="https://katherinetaylorescort.com/" />
+        <meta name="description" content="Discover refined companionship with San Francisco escorts, Sacramento escorts, and Bay Area escorts. Katherine Taylor offers presence—not just proximity—for those seeking escorts near me." />
+        <link rel="canonical" href="https://katherinetaylor.com/" />
         <WebsiteJsonLd />
         <WebPageJsonLd />
         <PersonJsonLd />
         <OrganizationJsonLd />
         <BreadcrumbJsonLd />
-        
-        {/* FAQ Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Where can I find San Francisco escorts?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Katherine Taylor offers refined companionship in San Francisco and surrounding areas."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What makes Katherine Taylor unique among Sacramento escorts?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Elegance, discretion, and poetic presence define the experience."
-                  }
-                }
-              ]
-            })
-          }}
-        />
+        <FAQPageJsonLd />
         {/* Critical CSS inlined - optimized for performance */}
         <style dangerouslySetInnerHTML={{
           __html: `
@@ -124,7 +115,6 @@ export default function RootLayout({
           `
         }} />
         {/* Preload critical resources */}
-        <link rel="preload" href="/homepage-about.jpg" as="image" type="image/jpeg" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         {/* Performance optimizations */}

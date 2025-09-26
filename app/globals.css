@@ -166,10 +166,132 @@ body::-webkit-scrollbar {
   border-bottom: none !important;
 }
 
+/* Accessibility improvements */
+/* Enhanced focus indicators for better keyboard navigation */
+*:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .font-body {
+    font-weight: 500;
+  }
+  
+  .text-neutral-600 {
+    color: #000 !important;
+  }
+  
+  .text-neutral-700 {
+    color: #000 !important;
+  }
+  
+  .border-neutral-200 {
+    border-color: #000 !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Transparent navigation header */
 header.bg-transparent {
   background: transparent !important;
   background-color: transparent !important;
+}
+
+/* Split section layout utilities */
+.split-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  .split-section {
+    flex-direction: row;
+  }
+}
+
+.split-section.reverse {
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .split-section.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Portrait image styling */
+.portrait-image {
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.portrait-image:hover {
+  transform: scale(1.02);
+}
+
+/* Text content styling */
+.split-text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #fafafa 0%, #ffffff 50%, #f5f5f5 100%);
+}
+
+@media (min-width: 1024px) {
+  .split-text-content {
+    padding: 6rem 1.5rem;
+  }
+}
+
+/* Lazy loading optimization */
+.lazy-load {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* Enhanced focus states for split sections */
+.split-section a:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Smooth transitions for responsive behavior */
+.split-section {
+  transition: all 0.3s ease;
+}
+
+/* Performance optimizations for images */
+.portrait-image {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 

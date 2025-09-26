@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://katherinetaylorescort.com/sitemap.xml

@@ -10,14 +10,15 @@ export default function InquirePage() {
       </p>
 
       <p className="text-base leading-relaxed text-neutral-600 text-center">
-        <a href="/faq">How do I hire an escort discreetly?</a>
+        <a href="/faq" aria-label="Read frequently asked questions about hiring an escort discreetly">How do I hire an escort discreetly?</a>
       </p>
 
       <div className="flex justify-center">
         <a
           href="mailto:inquiries@katherinetaylorescort.com?subject=Inquiry%20—%20Katherine%20Taylor%20Experience"
           data-cta="inquire"
-          className="inline-flex items-center rounded-full bg-black text-white px-6 py-3 text-sm font-medium hover:opacity-90 transition"
+          className="inline-flex items-center rounded-full bg-black text-white px-6 py-3 text-sm font-medium hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
+          aria-label="Send an introduction email to inquire about Katherine Taylor's services"
         >
           Send an Introduction
         </a>
