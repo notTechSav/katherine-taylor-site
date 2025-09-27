@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 export default function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -14,49 +14,39 @@ export default function HeroVideo() {
       const handleLoadedData = () => {
         setIsLoaded(true);
         setShowVideo(true);
-        // Try to play the video
         const playPromise = video.play();
         if (playPromise !== undefined) {
-          playPromise.catch((error) => {
-            console.error('Video play failed:', error);
-            // Don't set hasError for autoplay failures, just show the poster
+          playPromise.catch((err) => {
+            console.warn("Video play failed:", err);
+            // Poster stays visible if autoplay is blocked
           });
         }
       };
 
       const handleError = (e: Event) => {
-        console.error('Video failed to load:', e);
+        console.error("Video failed to load:", e);
         setHasError(true);
       };
 
-      const handleCanPlay = () => {
-        setIsLoaded(true);
-        setShowVideo(true);
-      };
+      video.addEventListener("loadeddata", handleLoadedData);
+      video.addEventListener("error", handleError);
 
-      video.addEventListener('loadeddata', handleLoadedData);
-      video.addEventListener('canplay', handleCanPlay);
-      video.addEventListener('error', handleError);
-      
       return () => {
-        video.removeEventListener('loadeddata', handleLoadedData);
-        video.removeEventListener('canplay', handleCanPlay);
-        video.removeEventListener('error', handleError);
+        video.removeEventListener("loadeddata", handleLoadedData);
+        video.removeEventListener("error", handleError);
       };
     }
   }, []);
 
   if (hasError) {
     return (
-      <div 
+      <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(/homepage-about.jpg)',
-        }}
+        style={{ backgroundImage: "url(/homepage-about.jpg)" }}
       />
     );
   }
-  
+
   return (
     <div className="absolute inset-0 w-full h-full">
       <video
@@ -66,24 +56,27 @@ export default function HeroVideo() {
         loop
         playsInline
         preload="auto"
-        className="absolute inset-0 w-full h-full object-cover"
         poster="/homepage-about.jpg"
+        className="absolute inset-0 w-full h-full object-cover"
         onError={(e) => {
-          console.error('Video error:', e);
+          console.error("Video error:", e);
           setHasError(true);
         }}
       >
-        <source src="/hero-video.mp4" type="video/mp4" />
+        {/* Optional WebM fallback if you generate one via Cloudinary */}
+        {/* <source src="https://res.cloudinary.com/.../video.webm" type="video/webm" /> */}
+        <source
+          src="https://res.cloudinary.com/katherine-taylor-escort-video/video/upload/v1758931445/katherine-taylor-escort-video_xzyalf.mp4"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
-      
-      {/* Fallback image while video loads */}
+
+      {/* Fallback image until the video shows */}
       {!showVideo && (
-        <div 
+        <div
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/homepage-about.jpg)',
-          }}
+          style={{ backgroundImage: "url(/homepage-about.jpg)" }}
         />
       )}
     </div>
